@@ -593,7 +593,7 @@ static int pwr_stop(lua_State *L)
 	Configs.Running = 0;
 	
 #if defined ( __linux )
-	sleep(100*1000);
+	usleep(100*1000);
 #else
 	Sleep(100);
 #endif
@@ -604,7 +604,7 @@ static int pwr_stop(lua_State *L)
 		memset(OutData, 0, sizeof(OutData));
 		emitter.write(sock, &src, (uint8_t *)OutData, sizeof(OutData));
 #if defined ( __linux )
-		sleep(100*1000);
+		usleep(100*1000);
 #else
 		Sleep(100);
 #endif
