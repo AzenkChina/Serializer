@@ -34,23 +34,23 @@
 
 enum __KeyID
 {
-	N0 = 0,
-	N1,
-	N2,
-	N3,
-	N4,
-	N5,
-	N6,
-	N7,
-	N8,
-	N9,
+	N0 = 0x0001,
+	N1 = 0x0002,
+	N2 = 0x0004,
+	N3 = 0x0008,
+	N4 = 0x0010,
+	N5 = 0x0020,
+	N6 = 0x0040,
+	N7 = 0x0080,
+	N8 = 0x0100,
+	N9 = 0x0200,
 
-	BACK = 0x0A,
-	ENTER = 0x0B,
-	PROG = 0x0C,
+	BACK = 0x0400,
+	ENTER = 0x0800,
+	PROG = 0x1000,
 
-	UP = 0x10,
-	DOWN = 0x20,
+	UP = 0x2000,
+	DOWN = 0x4000,
 };
 
 enum __KeyOption
